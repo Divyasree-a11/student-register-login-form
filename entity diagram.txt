@@ -1,0 +1,22 @@
++------------------+        +------------------+
+|     Student      |        |      Course      |
++------------------+        +------------------+
+| StudentID (PK)   |<------>| CourseID (PK)    |
+| FirstName        |        | CourseName       |
+| LastName         |        | CourseDescription |
+| DateOfBirth      |        | Credits          |
+| Email            |        +------------------+
+| PhoneNumber      |
++------------------+
+         |
+         |
+         v
++------------------+
+|    Enrollment     |
++------------------+
+| EnrollmentID (PK) |
+| StudentID (FK)    |
+| CourseID (FK)     |
+| EnrollmentDate     |
+| Grade              |
++------------------+
